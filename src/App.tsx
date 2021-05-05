@@ -27,7 +27,12 @@ function App() {
               </a>
               .
             </div>
-            <div>Application built by Kyle Mercer. See source code at</div>
+            <div>
+              Application built by Kyle Mercer. See source code at{' '}
+              <a target="_new" href="https://github.com/MercerK/AirQualityAssessmentTool">
+                GitHub.
+              </a>
+            </div>
           </div>
         </footer>
       </Container>
