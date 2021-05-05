@@ -1,5 +1,5 @@
 import { StringOrNumber } from '../../util'
-import { API_ORIGIN, ApiEndpoints } from '../constants'
+import { API_ORIGIN, ApiEndpoints, API_LIMIT } from '../constants'
 import { ApiBaseParams, ApiResult } from '../types'
 import { buildParams } from '../util'
 
@@ -66,7 +66,7 @@ export const fetchLocations = (
 ): Promise<ApiResult<ApiLocationItem[]>> =>
   fetch(
     `${API_ORIGIN}${ApiEndpoints.Locations}?${buildParams<ApiLocationParams>({
-      limit: 200,
+      limit: API_LIMIT,
       page,
       sort: 'asc',
       ...params,
