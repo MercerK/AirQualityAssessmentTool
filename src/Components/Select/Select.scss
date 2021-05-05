@@ -1,0 +1,12 @@
+.semantic-placeholder-override {
+  & > .divider.text {
+    color: rgba(191, 191, 191, 0.87);
+  }
+}
+
+.semantic-options-override {
+  & > .menu > .item > .text,
+  & > .divider.text {
+    text-transform: capitalize;
+  }
+}
